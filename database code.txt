@@ -1,0 +1,17 @@
+CREATE TABLE cylinder (
+    id int(11) NOT NULL AUTO_INCREMENT COMMENT 'Primary Key',
+    era_no varchar(100) NOT NULL COMMENT 'ERA No',
+    tool_type varchar(255) NOT NULL COMMENT 'Tool Type',
+    manufacturer_name varchar(255) NOT NULL COMMENT 'Manufacturer Name',
+    frequency varchar(255) NOT NULL COMMENT 'Frequency',
+    due_date date COMMENT 'Due Date',
+    PRIMARY KEY (id)
+  ) ENGINE=InnoDB DEFAULT CHARSET=latin1 COMMENT='datatable demo table' AUTO_INCREMENT=1;
+INSERT INTO `quality` (`id`, `era_no`, `tool_type`, `manufacturer_name`, `frequency`, `due_date`) VALUES
+(1, '101', 'Digital caliper','Trojan', '12 Months', '2023-07-02'),
+(2, '102', 'Digital Scale', 'Aeadam', '12 Months', '2023-07-03'),
+(3, '103', 'Digital Vernier Caliper', 'Drape expert', '12 Months', '2023-06-03'),
+(4, '104', 'Digital Vernier Caliper','Drape expert', '12 Months', '2023-06-02'),
+(5, '105', 'Gap Gauage', 'Go and Nogo gauge', '12 months', '2024-07-16'),
+(6, '106', 'Plug Gauage', '2 nos. Go and no go gauge', '12 Months', '2023-06-25'),
+(7, '107', 'T-square', 'helix', '12 Months', '2023-07-25');
