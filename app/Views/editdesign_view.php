@@ -31,13 +31,13 @@
       <div class="offcanvas-body">
         <ul class="navbar-nav justify-content-end flex-grow-1 pe-3">
           <li class="nav-item">
-            <a class="nav-link active" aria-current="page" href="<?php echo site_url('/cylinder-list') ?>">Cylinder Team</a>
+            <a class="nav-link "  href="<?php echo site_url('/cylinder-list') ?>">Cylinder Team</a>
           </li>
           <li class="nav-item">
-            <a class="nav-link" aria-current="page" href="<?php echo site_url('/design-list') ?>">Quality Team</a>
+            <a class="nav-link" aria-current="page" href="<?php echo site_url('/quality-list') ?>">Quality Team</a>
           </li>
           <li class="nav-item">
-            <a class="nav-link"aria-current="page" href="<?php echo site_url('/design-list') ?>">Design Team</a>
+            <a class="nav-link active" aria-current="page" href="<?php echo site_url('/design-list') ?>">Design Team</a>
           </li>
           <li class="nav-item">
             <a class="nav-link" href="#">Vertical Sliding</a>
@@ -64,25 +64,25 @@
   </div>
 </nav>
   <div class="container mt-5 mb-5">
-  <h3 class="text-danger fw-bold text-center mb-5">Edit Cylinder Equipment</h3>
-    <form method="post" id="update_cylinder" name="update_cylinder" action="<?= site_url('/update') ?>">
-      <input type="hidden" name="id" id="id" value="<?php echo $cylinder_obj['id']; ?>">
+  <h3 class="text-danger fw-bold text-center mb-5">Edit Design Equipment</h3>
+    <form method="post" id="update_design" name="update_design" action="<?= site_url('/updatedesign') ?>">
+      <input type="hidden" name="id" id="id" value="<?php echo $design_obj['id']; ?>">
       <div class="form-group">
         <label>ERA No</label>
-        <input type="text" name="era_no" class="form-control" value="<?php echo $cylinder_obj['era_no']; ?>">
+        <input type="text" name="era_no" class="form-control" value="<?php echo $design_obj['era_no']; ?>">
       </div>
       <div class="form-group">
         <label>Tool Type</label>
-        <input type="text" name="tool_type" class="form-control" value="<?php echo $cylinder_obj['tool_type']; ?>">
+        <input type="text" name="tool_type" class="form-control" value="<?php echo $design_obj['tool_type']; ?>">
       </div>
       <div class="form-group">
         <label>Manufacturer Name</label>
-        <input type="text" name="manufacturer_name" class="form-control" value="<?php echo $cylinder_obj['manufacturer_name']; ?>">
+        <input type="text" name="manufacturer_name" class="form-control" value="<?php echo $design_obj['manufacturer_name']; ?>">
       </div>
       <div class="form-group">
         <label>Frequency</label>
         
-        <select name="frequency" value="<?php echo $cylinder_obj['frequency']; ?>">
+        <select name="frequency" value="<?php echo $design_obj['frequency']; ?>">
             <option value="">--- Select Frequency ---</option>
             <option value="6 Months">6 Months</option>
             <option value="12 Months">12 Months</option>
@@ -91,7 +91,7 @@
     </div>
       <div class="form-group">
         <label>Due Date</label>
-        <input type="date" name="due_date" class="form-control" value="<?php echo $cylinder_obj['due_date']; ?>">
+        <input type="date" name="due_date" class="form-control" value="<?php echo $design_obj['due_date']; ?>">
       </div>
       <div class="form-group">
         <button type="submit" class="btn btn-danger btn-block">Save</button>
@@ -109,8 +109,8 @@
   <script src="https://cdnjs.cloudflare.com/ajax/libs/jquery-validate/1.19.2/jquery.validate.js"></script>
   <script src="https://cdnjs.cloudflare.com/ajax/libs/jquery-validate/1.19.2/additional-methods.min.js"></script>
   <script>
-    if ($("#update_cylinder").length > 0) {
-      $("#update_cylinder").validate({
+    if ($("#update_design").length > 0) {
+      $("#update_design").validate({
         rules: {
           frequency: {
             required: true,

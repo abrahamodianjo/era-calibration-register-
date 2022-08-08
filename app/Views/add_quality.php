@@ -39,7 +39,7 @@
             <a class="nav-link active" aria-current="page" href="<?php echo site_url('/quality-list') ?>">quality Team</a>
           </li>
           <li class="nav-item">
-            <a class="nav-link" href="#">MPL Team</a>
+            <a class="nav-link" aria-current="page" href="<?php echo site_url('/design-list') ?>">Design Team</a>
           </li>
           <li class="nav-item">
             <a class="nav-link" href="#">Vertical Sliding</a>

@@ -53,6 +53,16 @@ $routes->get('editquality-view/(:num)', 'QualityCrud::singleQuality/$1');
 $routes->post('updatequality', 'QualityCrud::update');
 $routes->get('deletequality/(:num)', 'QualityCrud::delete/$1');
 
+
+// CRUD RESTful Routes for design records 
+
+$routes->get('design-list', 'DesignCrud::index');
+$routes->get('design-form', 'DesignCrud::create');
+$routes->post('submit-form-design', 'DesignCrud::store');
+$routes->get('editdesign-view/(:num)', 'DesignCrud::singleDesign/$1');
+$routes->post('updatedesign', 'DesignCrud::update');
+$routes->get('deletedesign/(:num)', 'DesignCrud::delete/$1');
+
 /*
  * --------------------------------------------------------------------
  * Additional Routing
