@@ -24,10 +24,10 @@
       <div class="offcanvas-body">
         <ul class="navbar-nav justify-content-end flex-grow-1 pe-3">
           <li class="nav-item">
-            <a class="nav-link active" aria-current="page" href="<?php echo site_url('/cylinder-list') ?>">Cylinder Team</a>
+            <a class="nav-link active" href="<?php echo site_url('/cylinder-list') ?>" >Cylinder Team</a>
           </li>
           <li class="nav-item">
-            <a class="nav-link" href="#">Design Team</a>
+            <a class="nav-link"aria-current="page" href="<?php echo site_url('/quality-list') ?>">Quality Team</a>
           </li>
           <li class="nav-item">
             <a class="nav-link" href="#">MPL Team</a>
@@ -39,7 +39,7 @@
             <a class="nav-link" href="#">Dimeco</a>
           </li>
           <li class="nav-item">
-            <a class="nav-link" href="#">Quality</a>
+            <a class="nav-link" href="#">Design</a>
           </li>
           <li class="nav-item">
             <a class="nav-link" href="#">Health & Safety</a>
@@ -127,7 +127,7 @@
 
 
 
-  <footer class=" container-fluid bg-danger  d-flex flex-wrap justify-content-between align-items-center py-3 text-center mt-6 ">
+  <footer class=" container-fluid bg-danger  d-flex flex-wrap justify-content-between align-items-center py-3 text-center mt-6  fixed-bottom">
     <p class="col-md-12 mb-0 text-light">Copyright &copy; 2022 for ERA Home Security Ltd    ||  Application Designed by <a href="https://www.linkedin.com/in/odianjo-abraham-989759b3/" target="_blank" class="text-light">Abraham Odianjo</a> & <a href="https://www.linkedin.com/in/rotimi-lawal-6a9283156/" target="_blank" class="text-light">Rotimi Lawal</a></p>
   </footer>
 

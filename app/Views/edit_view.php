@@ -64,7 +64,7 @@
   </div>
 </nav>
   <div class="container mt-5 mb-5">
-  <h3 class="text-danger fw-bold text-center mb-5">Edit Equipment</h3>
+  <h3 class="text-danger fw-bold text-center mb-5">Edit Cylinder Equipment</h3>
     <form method="post" id="update_cylinder" name="update_cylinder" action="<?= site_url('/update') ?>">
       <input type="hidden" name="id" id="id" value="<?php echo $cylinder_obj['id']; ?>">
       <div class="form-group">

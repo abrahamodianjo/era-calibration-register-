@@ -44,6 +44,15 @@ $routes->get('edit-view/(:num)', 'EraCrud::singleEra/$1');
 $routes->post('update', 'EraCrud::update');
 $routes->get('delete/(:num)', 'EraCrud::delete/$1');
 
+// CRUD RESTful Routes for quality records 
+
+$routes->get('quality-list', 'QualityCrud::index');
+$routes->get('quality-form', 'QualityCrud::create');
+$routes->post('submit-form-quality', 'QualityCrud::store');
+$routes->get('editquality-view/(:num)', 'QualityCrud::singleQuality/$1');
+$routes->post('updatequality', 'QualityCrud::update');
+$routes->get('deletequality/(:num)', 'QualityCrud::delete/$1');
+
 /*
  * --------------------------------------------------------------------
  * Additional Routing

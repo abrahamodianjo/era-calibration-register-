@@ -33,10 +33,10 @@
       <div class="offcanvas-body">
         <ul class="navbar-nav justify-content-end flex-grow-1 pe-3">
           <li class="nav-item">
-            <a class="nav-link active" aria-current="page" href="<?php echo site_url('/cylinder-list') ?>">Cylinder Team</a>
+            <a class="nav-link "  href="<?php echo site_url('/cylinder-list') ?>">Cylinder Team</a>
           </li>
           <li class="nav-item">
-            <a class="nav-link" href="<?php echo site_url('/quality-list') ?>">Quality Team</a>
+            <a class="nav-link active" aria-current="page" href="<?php echo site_url('/quality-list') ?>">quality Team</a>
           </li>
           <li class="nav-item">
             <a class="nav-link" href="#">MPL Team</a>
@@ -66,8 +66,8 @@
   </div>
 </nav>
   <div class="container mt-5 mb-5">
-    <h3 class="text-danger fw-bold text-center mb-5">Add New Cylinder Equipment</h3>
-    <form method="post" id="add_create" name="add_create" action="<?= site_url('/submit-form') ?>">
+    <h3 class="text-danger fw-bold text-center mb-5">Add New Quality Equipment</h3>
+    <form method="post" id="add_create" name="add_create" action="<?= site_url('/submit-form-quality') ?>">
       <div class="form-group">
         <label>ERA No</label>
         <input type="text" name="era_no" class="form-control">

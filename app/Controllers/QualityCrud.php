@@ -31,14 +31,14 @@ class QualityCrud extends Controller
         return $this->response->redirect(site_url('/quality-list'));
     }
     // show single era
-    public function singleEra($id = null){
+    public function singleQuality($id = null){
         $qualityModel = new QualityModel();
         $data['quality_obj'] = $qualityModel->where('id', $id)->first();
-        return view('quality_view', $data);
+        return view('editquality_view', $data);
     }
     // update era data
     public function update(){
-        $eraModel = new EraModel();
+        $qualityModel = new QualityModel();
         $id = $this->request->getVar('id');
         $data = [
             'era_no' => $this->request->getVar('era_no'),
@@ -47,14 +47,14 @@ class QualityCrud extends Controller
             'frequency'  => $this->request->getVar('frequency'),
             'due_date' => $this->request->getVar('due_date'),
         ];
-        $eraModel->update($id, $data);
-        return $this->response->redirect(site_url('/cylinder-list'));
+        $qualityModel->update($id, $data);
+        return $this->response->redirect(site_url('/quality-list'));
     }
  
     // delete user
     public function delete($id = null){
-        $eraModel = new EraModel();
-        $data['cylinder'] = $eraModel->where('id', $id)->delete($id);
-        return $this->response->redirect(site_url('/cylinder-list'));
+        $qualityModel = new QualityModel();
+        $data['quality'] = $qualityModel->where('id', $id)->delete($id);
+        return $this->response->redirect(site_url('/quality-list'));
     }    
 }
