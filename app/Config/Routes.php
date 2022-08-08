@@ -35,7 +35,7 @@ $routes->set404Override();
 
 // We get a performance increase by specifying the default
 // route since we don't have to scan directories.
-// CRUD RESTful Routes
+// CRUD RESTful Routes for cylinder records 
 $routes->get('/', 'EraCrud::index');
 $routes->get('cylinder-list', 'EraCrud::index');
 $routes->get('cylinder-form', 'EraCrud::create');

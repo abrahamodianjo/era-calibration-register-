@@ -21,7 +21,7 @@
 
 <nav class="navbar navbar-dark bg-danger ">
   <div class="container-fluid">
-    <a class="navbar-brand" href="/">ERA CALIBRATION RECORDS</a>
+    <a class="navbar-brand fw-bold" href="/">ERA CALIBRATION SYSTEM</a>
     <button class="navbar-toggler" type="button" data-bs-toggle="offcanvas" data-bs-target="#offcanvasDarkNavbar" aria-controls="offcanvasDarkNavbar">
       <span class="navbar-toggler-icon"></span>
     </button>
@@ -65,7 +65,8 @@
     </div>
   </div>
 </nav>
-  <div class="container mt-5">
+  <div class="container mt-5 mb-5">
+    <h3 class="text-danger fw-bold text-center mb-5">Add New Equipment</h3>
     <form method="post" id="add_create" name="add_create" action="<?= site_url('/submit-form') ?>">
       <div class="form-group">
         <label>ERA No</label>
@@ -94,11 +95,14 @@
       </div>
      
       <div class="form-group">
-        <button type="submit" class="btn btn-danger btn-block">Add To Equipment List</button>
+        <button type="submit" class="btn btn-danger btn-block">SAVE</button>
       </div>
     </form>
   </div>
 
+  <footer class=" container-fluid bg-danger  d-flex flex-wrap justify-content-between align-items-center py-3 text-center mt-6 ">
+    <p class="col-md-12 mb-0 text-light">Copyright &copy; 2022 for ERA Home Security Ltd    ||  Application Designed by <a href="https://www.linkedin.com/in/odianjo-abraham-989759b3/" target="_blank" class="text-light">Abraham Odianjo</a> & <a href="https://www.linkedin.com/in/rotimi-lawal-6a9283156/" target="_blank" class="text-light">Rotimi Lawal</a></p>
+  </footer>
   <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.2.0/dist/js/bootstrap.bundle.min.js" integrity="sha384-A3rJD856KowSb7dwlZdYEkO39Gagi7vIsF0jrRAoQmDKKtQBHUuLZ9AsSv4jD4Xa" crossorigin="anonymous"></script>
 
   <script src="https://code.jquery.com/jquery-3.5.1.slim.min.js"></script>
@@ -108,25 +112,10 @@
     if ($("#add_create").length > 0) {
       $("#add_create").validate({
         rules: {
-          name: {
+          frequency: {
             required: true,
-          },
-          email: {
-            required: true,
-            maxlength: 60,
-            email: true,
-          },
-        },
-        messages: {
-          name: {
-            required: "Name is required.",
-          },
-          email: {
-            required: "Email is required.",
-            email: "It does not seem to be a valid email.",
-            maxlength: "The email should be or equal to 60 chars.",
-          },
-        },
+          }
+        }, 
       })
     }
   </script>
