@@ -2,6 +2,8 @@
 <html>
 <head>
   <title>ERA Calibration App</title>
+  <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.2.0/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-gH2yIJqKdNHPEq0n4Mqa/HGKIhSkIHeL5AyhkYV8i59U5AR6csBvApHHNl/vI1Bx" crossorigin="anonymous">
+
   <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.5.0/css/bootstrap.min.css">
   <style>
     .container {
@@ -16,6 +18,53 @@
   </style>
 </head>
 <body>
+
+<nav class="navbar navbar-dark bg-danger ">
+  <div class="container-fluid">
+    <a class="navbar-brand" href="/">ERA CALIBRATION RECORDS</a>
+    <button class="navbar-toggler" type="button" data-bs-toggle="offcanvas" data-bs-target="#offcanvasDarkNavbar" aria-controls="offcanvasDarkNavbar">
+      <span class="navbar-toggler-icon"></span>
+    </button>
+    <div class="offcanvas offcanvas-end text-bg-danger" tabindex="-1" id="offcanvasDarkNavbar" aria-labelledby="offcanvasDarkNavbarLabel">
+      <div class="offcanvas-header">
+        <h5 class="offcanvas-title" id="offcanvasDarkNavbarLabel">MENU</h5>
+        <button type="button" class="btn-close btn-close-white" data-bs-dismiss="offcanvas" aria-label="Close"></button>
+      </div>
+      <div class="offcanvas-body">
+        <ul class="navbar-nav justify-content-end flex-grow-1 pe-3">
+          <li class="nav-item">
+            <a class="nav-link active" aria-current="page" href="<?php echo site_url('/cylinder-list') ?>">Cylinder Team</a>
+          </li>
+          <li class="nav-item">
+            <a class="nav-link" href="#">Design Team</a>
+          </li>
+          <li class="nav-item">
+            <a class="nav-link" href="#">MPL Team</a>
+          </li>
+          <li class="nav-item">
+            <a class="nav-link" href="#">Vertical Sliding</a>
+          </li>
+          <li class="nav-item">
+            <a class="nav-link" href="#">Dimeco</a>
+          </li>
+          <li class="nav-item">
+            <a class="nav-link" href="#">Quality</a>
+          </li>
+          <li class="nav-item">
+            <a class="nav-link" href="#">Health & Safety</a>
+          </li>
+          <li class="nav-item">
+            <a class="nav-link" href="#">Engineering</a>
+          </li>
+          <li class="nav-item">
+            <a class="nav-link" href="#">Warehouse</a>
+          </li>
+          
+        </ul>
+      </div>
+    </div>
+  </div>
+</nav>
   <div class="container mt-5">
     <form method="post" id="add_create" name="add_create" action="<?= site_url('/submit-form') ?>">
       <div class="form-group">
@@ -49,6 +98,9 @@
       </div>
     </form>
   </div>
+
+  <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.2.0/dist/js/bootstrap.bundle.min.js" integrity="sha384-A3rJD856KowSb7dwlZdYEkO39Gagi7vIsF0jrRAoQmDKKtQBHUuLZ9AsSv4jD4Xa" crossorigin="anonymous"></script>
+
   <script src="https://code.jquery.com/jquery-3.5.1.slim.min.js"></script>
   <script src="https://cdnjs.cloudflare.com/ajax/libs/jquery-validate/1.19.2/jquery.validate.js"></script>
   <script src="https://cdnjs.cloudflare.com/ajax/libs/jquery-validate/1.19.2/additional-methods.min.js"></script>
