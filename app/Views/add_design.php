@@ -45,7 +45,7 @@
             <a class="nav-link"  aria-current="page" href="<?php echo site_url('/vs-list') ?>">Vertical Sliding Team</a>
           </li>
           <li class="nav-item">
-            <a class="nav-link" href="#">Dimeco</a>
+            <a class="nav-link"aria-current="page" href="<?php echo site_url('/dimeco-list') ?>">Dimeco Team</a>
           </li>
           <li class="nav-item">
             <a class="nav-link" href="#">Quality</a>

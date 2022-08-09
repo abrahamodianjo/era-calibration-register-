@@ -36,7 +36,7 @@
             <a class="nav-link"  aria-current="page" href="<?php echo site_url('/vs-list') ?>">Vertical Sliding Team</a>
           </li>
           <li class="nav-item">
-            <a class="nav-link" href="#">Dimeco</a>
+            <a class="nav-link" aria-current="page" href="<?php echo site_url('/dimeco-list') ?>">Dimeco Team</a>
           </li>
           <li class="nav-item">
             <a class="nav-link" href="#">Quality</a>
@@ -126,8 +126,7 @@
 </div>
 
 
-
-  <footer class=" container-fluid bg-danger  d-flex flex-wrap justify-content-between align-items-center py-3 text-center mt-6  fixed-bottom">
+<footer class="container-fluid bg-danger  d-flex flex-wrap justify-content-between align-items-center py-3 text-center mt-6  fixed-bottom">
     <p class="col-md-12 mb-0 text-light">Copyright &copy; 2022 for ERA Home Security Ltd    ||  Application Designed by <a href="https://www.linkedin.com/in/odianjo-abraham-989759b3/" target="_blank" class="text-light">Abraham Odianjo</a> & <a href="https://www.linkedin.com/in/rotimi-lawal-6a9283156/" target="_blank" class="text-light">Rotimi Lawal</a></p>
   </footer>
 

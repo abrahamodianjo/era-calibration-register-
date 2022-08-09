@@ -35,6 +35,8 @@ $routes->set404Override();
 
 // We get a performance increase by specifying the default
 // route since we don't have to scan directories.
+
+
 // CRUD RESTful Routes for cylinder records 
 $routes->get('/', 'EraCrud::index');
 $routes->get('cylinder-list', 'EraCrud::index');
@@ -71,6 +73,15 @@ $routes->post('submit-form-vs', 'VsCrud::store');
 $routes->get('editvs-view/(:num)', 'VsCrud::singleVs/$1');
 $routes->post('updatevs', 'VsCrud::update');
 $routes->get('deletevs/(:num)', 'VsCrud::delete/$1');
+
+// CRUD RESTful Routes for dimeco records 
+
+$routes->get('dimeco-list', 'DimecoCrud::index');
+$routes->get('dimeco-form', 'DimecoCrud::create');
+$routes->post('submit-form-dimeco', 'DimecoCrud::store');
+$routes->get('editdimeco-view/(:num)', 'DimecoCrud::singleDimeco/$1');
+$routes->post('updatedimeco', 'DimecoCrud::update');
+$routes->get('deletedimeco/(:num)', 'DimecoCrud::delete/$1');
 
 /*
  * --------------------------------------------------------------------

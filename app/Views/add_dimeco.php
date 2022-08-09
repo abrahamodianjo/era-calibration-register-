@@ -1,7 +1,7 @@
 <!DOCTYPE html>
 <html>
 <head>
-  <title>ERA Calibration App</title>
+  <title>Dimeco Team</title>
   <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.2.0/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-gH2yIJqKdNHPEq0n4Mqa/HGKIhSkIHeL5AyhkYV8i59U5AR6csBvApHHNl/vI1Bx" crossorigin="anonymous">
 
   <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.5.0/css/bootstrap.min.css">
@@ -36,16 +36,16 @@
             <a class="nav-link "  href="<?php echo site_url('/cylinder-list') ?>">Cylinder Team</a>
           </li>
           <li class="nav-item">
-            <a class="nav-link " aria-current="page" href="<?php echo site_url('/quality-list') ?>">quality Team</a>
+            <a class="nav-link " aria-current="page" href="<?php echo site_url('/quality-list') ?>">Quality Team</a>
           </li>
           <li class="nav-item">
-            <a class="nav-link" aria-current="page" href="<?php echo site_url('/design-list') ?>">Design Team</a>
+            <a class="nav-link " aria-current="page" href="<?php echo site_url('/design-list') ?>">Design Team</a>
           </li>
           <li class="nav-item">
-            <a class="nav-link active" aria-current="page" href="<?php echo site_url('/vs-list') ?>">Vertical Sliding Team</a>
+            <a class="nav-link"  aria-current="page" href="<?php echo site_url('/vs-list') ?>">Vertical Sliding Team</a>
           </li>
           <li class="nav-item">
-            <a class="nav-link" aria-current="page" href="<?php echo site_url('/dimeco-list') ?>">Dimeco Team</a>
+            <a class="nav-link active"aria-current="page" href="<?php echo site_url('/dimeco-list') ?>">Dimeco Team</a>
           </li>
           <li class="nav-item">
             <a class="nav-link" href="#">Quality</a>
@@ -66,8 +66,8 @@
   </div>
 </nav>
   <div class="container mt-5 mb-5">
-    <h3 class="text-danger fw-bold text-center mb-5">Add New Vertcial Sliding Equipment</h3>
-    <form method="post" id="add_create" name="add_create" action="<?= site_url('/submit-form-vs') ?>">
+    <h3 class="text-danger fw-bold text-center mb-5">Add New Dimeco Equipment</h3>
+    <form method="post" id="add_create" name="add_create" action="<?= site_url('/submit-form-dimeco') ?>">
       <div class="form-group">
         <label>ERA No</label>
         <input type="text" name="era_no" class="form-control">
