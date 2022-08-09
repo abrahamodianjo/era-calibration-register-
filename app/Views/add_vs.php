@@ -36,13 +36,13 @@
             <a class="nav-link "  href="<?php echo site_url('/cylinder-list') ?>">Cylinder Team</a>
           </li>
           <li class="nav-item">
-            <a class="nav-link active" aria-current="page" href="<?php echo site_url('/quality-list') ?>">quality Team</a>
+            <a class="nav-link " aria-current="page" href="<?php echo site_url('/quality-list') ?>">quality Team</a>
           </li>
           <li class="nav-item">
             <a class="nav-link" aria-current="page" href="<?php echo site_url('/design-list') ?>">Design Team</a>
           </li>
           <li class="nav-item">
-            <a class="nav-link"  aria-current="page" href="<?php echo site_url('/vs-list') ?>">Vertical Sliding Team</a>
+            <a class="nav-link active" aria-current="page" href="<?php echo site_url('/vs-list') ?>">Vertical Sliding Team</a>
           </li>
           <li class="nav-item">
             <a class="nav-link" href="#">Dimeco</a>
@@ -66,8 +66,8 @@
   </div>
 </nav>
   <div class="container mt-5 mb-5">
-    <h3 class="text-danger fw-bold text-center mb-5">Add New Quality Equipment</h3>
-    <form method="post" id="add_create" name="add_create" action="<?= site_url('/submit-form-quality') ?>">
+    <h3 class="text-danger fw-bold text-center mb-5">Add New Vertcial Sliding Equipment</h3>
+    <form method="post" id="add_create" name="add_create" action="<?= site_url('/submit-form-vs') ?>">
       <div class="form-group">
         <label>ERA No</label>
         <input type="text" name="era_no" class="form-control">

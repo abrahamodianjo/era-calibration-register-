@@ -40,7 +40,7 @@
             <a class="nav-link"aria-current="page" href="<?php echo site_url('/design-list') ?>">Design Team</a>
           </li>
           <li class="nav-item">
-            <a class="nav-link" href="#">Vertical Sliding</a>
+            <a class="nav-link"  aria-current="page" href="<?php echo site_url('/vs-list') ?>">Vertical Sliding Team</a>
           </li>
           <li class="nav-item">
             <a class="nav-link" href="#">Dimeco</a>
