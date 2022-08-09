@@ -65,7 +65,14 @@
     </div>
   </div>
 </nav>
+
+
+
+     
+
   <div class="container mt-5 mb-5">
+
+     
     <h3 class="text-danger fw-bold text-center mb-5">Add New Cylinder Equipment</h3>
     <form method="post" id="add_create" name="add_create" action="<?= site_url('/submit-form') ?>">
       <div class="form-group">
@@ -98,9 +105,11 @@
         <button type="submit" class="btn btn-danger btn-block">SAVE</button>
       </div>
     </form>
+    
+<a href="<?php echo site_url('/cylinder-list') ?>" class=" form-group mt-7  btn btn-dark btn-block">Go Back to Cylinder Records</a>
   </div>
 
-  <footer class=" container-fluid bg-danger  d-flex flex-wrap justify-content-between align-items-center py-3 text-center mt-6 ">
+  <footer class=" container-fluid bg-danger  d-flex flex-wrap justify-content-between align-items-center py-3 text-center mt-6  fixed-bottom">
     <p class="col-md-12 mb-0 text-light">Copyright &copy; 2022 for ERA Home Security Ltd    ||  Application Designed by <a href="https://www.linkedin.com/in/odianjo-abraham-989759b3/" target="_blank" class="text-light">Abraham Odianjo</a> & <a href="https://www.linkedin.com/in/rotimi-lawal-6a9283156/" target="_blank" class="text-light">Rotimi Lawal</a></p>
   </footer>
   <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.2.0/dist/js/bootstrap.bundle.min.js" integrity="sha384-A3rJD856KowSb7dwlZdYEkO39Gagi7vIsF0jrRAoQmDKKtQBHUuLZ9AsSv4jD4Xa" crossorigin="anonymous"></script>

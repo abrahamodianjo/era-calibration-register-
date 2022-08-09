@@ -63,6 +63,15 @@ $routes->get('editdesign-view/(:num)', 'DesignCrud::singleDesign/$1');
 $routes->post('updatedesign', 'DesignCrud::update');
 $routes->get('deletedesign/(:num)', 'DesignCrud::delete/$1');
 
+// CRUD RESTful Routes for vertical sliding records 
+
+$routes->get('vs-list', 'VsCrud::index');
+$routes->get('vs-form', 'VsCrud::create');
+$routes->post('submit-form-vs', 'VsCrud::store');
+$routes->get('editvs-view/(:num)', 'VsCrud::singleVs/$1');
+$routes->post('updatevs', 'VsCrud::update');
+$routes->get('deletevs/(:num)', 'VsCrud::delete/$1');
+
 /*
  * --------------------------------------------------------------------
  * Additional Routing
