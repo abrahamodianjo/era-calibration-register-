@@ -42,10 +42,10 @@
             <a class="nav-link active" aria-current="page" href="<?php echo site_url('/mpl-list') ?>">MPL Team</a>
           </li>
           <li class="nav-item">
-            <a class="nav-link" href="#">Health & Safety</a>
+            <a class="nav-link" aria-current="page" href="<?php echo site_url('/engineering-list') ?>">Engineering Team</a>
           </li>
           <li class="nav-item">
-            <a class="nav-link" href="#">Engineering</a>
+            <a class="nav-link" href="#">Health & Safety Team</a>
           </li>
           <li class="nav-item">
             <a class="nav-link" href="#">Warehouse</a>

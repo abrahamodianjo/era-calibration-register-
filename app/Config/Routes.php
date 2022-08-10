@@ -92,6 +92,15 @@ $routes->get('editmpl-view/(:num)', 'MplCrud::singleMpl/$1');
 $routes->post('updatempl', 'MplCrud::update');
 $routes->get('deletempl/(:num)', 'MplCrud::delete/$1');
 
+// CRUD RESTful Routes for Engineering records 
+
+$routes->get('engineering-list', 'EngineeringCrud::index');
+$routes->get('engineering-form', 'EngineeringCrud::create');
+$routes->post('submit-form-engineering', 'EngineeringCrud::store');
+$routes->get('editengineering-view/(:num)', 'EngineeringCrud::singleEngineering/$1');
+$routes->post('updateengineering', 'EngineeringCrud::update');
+$routes->get('deleteengineering/(:num)', 'EngineeringCrud::delete/$1');
+
 /*
  * --------------------------------------------------------------------
  * Additional Routing
