@@ -83,6 +83,15 @@ $routes->get('editdimeco-view/(:num)', 'DimecoCrud::singleDimeco/$1');
 $routes->post('updatedimeco', 'DimecoCrud::update');
 $routes->get('deletedimeco/(:num)', 'DimecoCrud::delete/$1');
 
+// CRUD RESTful Routes for MPL records 
+
+$routes->get('mpl-list', 'MplCrud::index');
+$routes->get('mpl-form', 'MplCrud::create');
+$routes->post('submit-form-mpl', 'MplCrud::store');
+$routes->get('editmpl-view/(:num)', 'MplCrud::singleMpl/$1');
+$routes->post('updatempl', 'MplCrud::update');
+$routes->get('deletempl/(:num)', 'MplCrud::delete/$1');
+
 /*
  * --------------------------------------------------------------------
  * Additional Routing
