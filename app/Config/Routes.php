@@ -110,6 +110,16 @@ $routes->get('edithse-view/(:num)', 'HseCrud::singleHse/$1');
 $routes->post('updatehse', 'HseCrud::update');
 $routes->get('deletehse/(:num)', 'HseCrud::delete/$1');
 
+// CRUD RESTful Routes for Warehouse records 
+
+$routes->get('warehouse-list', 'WarehouseCrud::index');
+$routes->get('warehouse-form', 'WarehouseCrud::create');
+$routes->post('submit-form-warehouse', 'WarehouseCrud::store');
+$routes->get('editwarehouse-view/(:num)', 'WarehouseCrud::singleWarehouse/$1');
+$routes->post('updatewarehouse', 'WarehouseCrud::update');
+$routes->get('deletewarehouse/(:num)', 'WarehouseCrud::delete/$1');
+
+
 
 /*
  * --------------------------------------------------------------------

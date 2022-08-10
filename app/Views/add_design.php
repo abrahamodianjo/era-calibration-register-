@@ -57,7 +57,7 @@
             <a class="nav-link" aria-current="page" href="<?php echo site_url('/hse-list') ?>">Health & Safety Team</a>
           </li>
           <li class="nav-item">
-            <a class="nav-link" href="#">Warehouse</a>
+            <a class="nav-link" aria-current="page" href="<?php echo site_url('/warehouse-list') ?>">Warehouse Team</a>
           </li>
           
         </ul>
