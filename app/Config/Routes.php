@@ -101,6 +101,16 @@ $routes->get('editengineering-view/(:num)', 'EngineeringCrud::singleEngineering/
 $routes->post('updateengineering', 'EngineeringCrud::update');
 $routes->get('deleteengineering/(:num)', 'EngineeringCrud::delete/$1');
 
+// CRUD RESTful Routes for Hse records 
+
+$routes->get('hse-list', 'HseCrud::index');
+$routes->get('hse-form', 'HseCrud::create');
+$routes->post('submit-form-hse', 'HseCrud::store');
+$routes->get('edithse-view/(:num)', 'HseCrud::singleHse/$1');
+$routes->post('updatehse', 'HseCrud::update');
+$routes->get('deletehse/(:num)', 'HseCrud::delete/$1');
+
+
 /*
  * --------------------------------------------------------------------
  * Additional Routing

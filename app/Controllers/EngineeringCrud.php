@@ -1,6 +1,6 @@
 <?php 
 namespace App\Controllers;
-use App\Models\EngineeringcoModel;
+use App\Models\EngineeringModel;
 use CodeIgniter\Controller;
 class EngineeringCrud extends Controller
 {
