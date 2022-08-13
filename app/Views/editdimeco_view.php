@@ -99,10 +99,10 @@
     </form>
   </div>
 
-  <footer class="container-fluid bg-danger  d-flex flex-wrap justify-content-between align-items-center py-3 text-center mt-6  fixed-bottom">
+  <footer class="container-fluid bg-danger  d-flex flex-wrap justify-content-between align-items-center py-3 text-center mt-6">
     <p class="col-md-12 mb-0 text-light">Copyright &copy; 2022 for ERA Home Security Ltd    ||  Application Designed by <a href="https://www.linkedin.com/in/odianjo-abraham-989759b3/" target="_blank" class="text-light">Abraham Odianjo</a> & <a href="https://www.linkedin.com/in/rotimi-lawal-6a9283156/" target="_blank" class="text-light">Rotimi Lawal</a></p>
   </footer>
-
+  
   <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.2.0/dist/js/bootstrap.bundle.min.js" integrity="sha384-A3rJD856KowSb7dwlZdYEkO39Gagi7vIsF0jrRAoQmDKKtQBHUuLZ9AsSv4jD4Xa" crossorigin="anonymous"></script>
 
   <script src="https://code.jquery.com/jquery-3.5.1.slim.min.js"></script>

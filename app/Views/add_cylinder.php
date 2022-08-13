@@ -15,6 +15,10 @@
       font-size: 14px;
       color: red;
     }
+    footer .copyright{
+      
+            padding: .25rem 1.75rem;
+    }
   </style>
 </head>
 <body>
@@ -109,7 +113,7 @@
     <a href="<?php echo site_url('/cylinder-list') ?>" class=" form-group   btn btn-dark btn-block">Go Back to Cylinder Records</a>
   </div>
 
-  <footer class="container-fluid bg-danger justify-content-between align-items-center py-3 text-center mt-5 fixed-bottom">
+  <footer class="container-fluid bg-danger justify-content-between align-items-center py-3 text-center mt-5  Copyright">
     <p class="col-md-12 mb-0 text-light">Copyright &copy; 2022 for ERA Home Security Ltd    ||  Application Designed by <a href="https://www.linkedin.com/in/odianjo-abraham-989759b3/" target="_blank" class="text-light">Abraham Odianjo</a> & <a href="https://www.linkedin.com/in/rotimi-lawal-6a9283156/" target="_blank" class="text-light">Rotimi Lawal</a></p>
   </footer>
 
