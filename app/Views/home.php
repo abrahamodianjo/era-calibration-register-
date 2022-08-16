@@ -4,7 +4,7 @@
   <meta charset="utf-8">
   <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
   <title>Era Home Security</title>
-  
+
   <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.2.0/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-gH2yIJqKdNHPEq0n4Mqa/HGKIhSkIHeL5AyhkYV8i59U5AR6csBvApHHNl/vI1Bx" crossorigin="anonymous">
 </head>
 <link rel="canonical" href="https://getbootstrap.com/docs/5.2/examples/album/">
@@ -131,7 +131,7 @@
         </div>
         </div>
         <div class="col">
-          <div class="card shadow-sm">
+          <div class="card shadow-sm ">
           <a class="card shadow-sm" href="<?php echo site_url('/cylinder-list') ?>">
                 <img src="<?php echo ('https://eracalibrationsystem.odianjoabraham.xyz/cylinder.png'); ?>" alt="test image">
           </a>  </div>
@@ -158,7 +158,7 @@
         </div>
         <div class="col">
           <div class="card shadow-sm">
-          <a class="card shadow-sm" href="<?php echo site_url('/health-list') ?>">
+          <a class="card shadow-sm" href="<?php echo site_url('/hse-list') ?>">
                 <img src="<?php echo ('https://eracalibrationsystem.odianjoabraham.xyz/health.png'); ?>" alt="test image">
           </a>
           </div>
