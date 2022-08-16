@@ -131,7 +131,7 @@
         </div>
         </div>
         <div class="col">
-          <div class="card shadow-sm ">
+          <div class="card shadow-sm">
           <a class="card shadow-sm" href="<?php echo site_url('/cylinder-list') ?>">
                 <img src="<?php echo ('https://eracalibrationsystem.odianjoabraham.xyz/cylinder.png'); ?>" alt="test image">
           </a>  </div>
@@ -166,8 +166,8 @@
 
         <div class="col">
           <div class="card shadow-sm">
-          <a class="card shadow-sm" href="<?php echo site_url('/mpl-list') ?>">
-                <img src="<?php echo ('https://eracalibrationsystem.odianjoabraham.xyz/mpl.png'); ?>" alt="test image">
+          <a class="card shadow-sm" href="<?php echo site_url('/cylinder-list') ?>">
+                <img src="<?php echo ('https://eracalibrationsystem.odianjoabraham.xyz/cylinder.png'); ?>" alt="test image">
           </a>
           </div>
         </div>
@@ -191,7 +191,7 @@
 
 </main>
 <footer class="container-fluid bg-danger  d-flex flex-wrap justify-content-between align-items-center py-3 text-center mt-6">
-    <p class="col-md-12 mb-0 text-light">Copyright &copy; 2022 for ERA Home Security Ltd    ||  Application Designed by <a href="https://www.linkedin.com/in/odianjo-abraham-989759b3/" target="_blank" class="text-light">Abraham Odianjo</a> & <a href="https://www.linkedin.com/in/rotimi-lawal-6a9283156/" target="_blank" class="text-light">Rotimi Lawal</a></p>
+    <p class="col-md-12 mb-0 text-light">Copyright &copy; 2022 for ERA Home Security Ltd  ||  Application Designed by <a href="https://www.linkedin.com/in/odianjo-abraham-989759b3/" target="_blank" class="text-light">Abraham Odianjo</a> & <a href="https://www.linkedin.com/in/rotimi-lawal-6a9283156/" target="_blank" class="text-light">Rotimi Lawal</a></p>
   </footer>
 
 <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.2.0/dist/js/bootstrap.bundle.min.js" integrity="sha384-A3rJD856KowSb7dwlZdYEkO39Gagi7vIsF0jrRAoQmDKKtQBHUuLZ9AsSv4jD4Xa" crossorigin="anonymous"></script>

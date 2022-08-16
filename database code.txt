@@ -1,4 +1,4 @@
-CREATE TABLE cylinder (
+CREATE TABLE quality (
     id int(11) NOT NULL AUTO_INCREMENT COMMENT 'Primary Key',
     era_no varchar(100) NOT NULL COMMENT 'ERA No',
     tool_type varchar(255) NOT NULL COMMENT 'Tool Type',
@@ -15,3 +15,122 @@ INSERT INTO `quality` (`id`, `era_no`, `tool_type`, `manufacturer_name`, `freque
 (5, '105', 'Gap Gauage', 'Go and Nogo gauge', '12 months', '2024-07-16'),
 (6, '106', 'Plug Gauage', '2 nos. Go and no go gauge', '12 Months', '2023-06-25'),
 (7, '107', 'T-square', 'helix', '12 Months', '2023-07-25');
+
+CREATE TABLE cylinder (
+    id int(11) NOT NULL AUTO_INCREMENT COMMENT 'Primary Key',
+    era_no varchar(100) NOT NULL COMMENT 'ERA No',
+    tool_type varchar(255) NOT NULL COMMENT 'Tool Type',
+    manufacturer_name varchar(255) NOT NULL COMMENT 'Manufacturer Name',
+    frequency varchar(255) NOT NULL COMMENT 'Frequency',
+    due_date date COMMENT 'Due Date',
+    PRIMARY KEY (id)
+  ) ENGINE=InnoDB DEFAULT CHARSET=latin1 COMMENT='datatable demo table' AUTO_INCREMENT=1;
+INSERT INTO `cylinder` (`id`, `era_no`, `tool_type`, `manufacturer_name`, `frequency`, `due_date`) VALUES
+(1, '201', 'Digital caliper','Trojan', '12 Months', '2023-07-02'),
+(2, '202', 'Digital Scale', 'Aeadam', '12 Months', '2023-07-03'),
+(3, '203', 'Digital Vernier Caliper', 'Drape expert', '12 Months', '2023-06-03');
+
+CREATE TABLE hse (
+    id int(11) NOT NULL AUTO_INCREMENT COMMENT 'Primary Key',
+    era_no varchar(100) NOT NULL COMMENT 'ERA No',
+    tool_type varchar(255) NOT NULL COMMENT 'Tool Type',
+    manufacturer_name varchar(255) NOT NULL COMMENT 'Manufacturer Name',
+    frequency varchar(255) NOT NULL COMMENT 'Frequency',
+    due_date date COMMENT 'Due Date',
+    PRIMARY KEY (id)
+  ) ENGINE=InnoDB DEFAULT CHARSET=latin1 COMMENT='datatable demo table' AUTO_INCREMENT=1;
+INSERT INTO `hse` (`id`, `era_no`, `tool_type`, `manufacturer_name`, `frequency`, `due_date`) VALUES
+(1, '301', 'Digital caliper','Trojan', '12 Months', '2023-07-02'),
+(2, '302', 'Digital Scale', 'Aeadam', '12 Months', '2023-07-03'),
+(3, '303', 'Digital Vernier Caliper', 'Drape expert', '12 Months', '2023-06-03'),
+(4, '304', 'Digital Vernier Caliper','Drape expert', '12 Months', '2023-06-02'),
+(5, '305', 'Gap Gauage', 'Go and Nogo gauge', '12 months', '2024-07-16'),
+(6, '306', 'Plug Gauage', '2 nos. Go and no go gauge', '12 Months', '2023-06-25'),
+(7, '307', 'T-square', 'helix', '12 Months', '2023-07-25');
+
+CREATE TABLE dimeco (
+    id int(11) NOT NULL AUTO_INCREMENT COMMENT 'Primary Key',
+    era_no varchar(100) NOT NULL COMMENT 'ERA No',
+    tool_type varchar(255) NOT NULL COMMENT 'Tool Type',
+    manufacturer_name varchar(255) NOT NULL COMMENT 'Manufacturer Name',
+    frequency varchar(255) NOT NULL COMMENT 'Frequency',
+    due_date date COMMENT 'Due Date',
+    PRIMARY KEY (id)
+  ) ENGINE=InnoDB DEFAULT CHARSET=latin1 COMMENT='datatable demo table' AUTO_INCREMENT=1;
+INSERT INTO `dimeco` (`id`, `era_no`, `tool_type`, `manufacturer_name`, `frequency`, `due_date`) VALUES
+(1, '401', 'Digital caliper','Trojan', '12 Months', '2023-07-02'),
+(2, '402', 'Digital Scale', 'Aeadam', '12 Months', '2023-07-03'),
+(3, '403', 'Digital Vernier Caliper', 'Drape expert', '12 Months', '2023-06-03'),
+(4, '404', 'Digital Vernier Caliper','Drape expert', '12 Months', '2023-06-02'),
+(5, '405', 'Gap Gauage', 'Go and Nogo gauge', '12 months', '2024-07-16'),
+(6, '406', 'Plug Gauage', '2 nos. Go and no go gauge', '12 Months', '2023-06-25'),
+(7, '407', 'T-square', 'helix', '12 Months', '2023-07-25');
+
+CREATE TABLE design (
+    id int(11) NOT NULL AUTO_INCREMENT COMMENT 'Primary Key',
+    era_no varchar(100) NOT NULL COMMENT 'ERA No',
+    tool_type varchar(255) NOT NULL COMMENT 'Tool Type',
+    manufacturer_name varchar(255) NOT NULL COMMENT 'Manufacturer Name',
+    frequency varchar(255) NOT NULL COMMENT 'Frequency',
+    due_date date COMMENT 'Due Date',
+    PRIMARY KEY (id)
+  ) ENGINE=InnoDB DEFAULT CHARSET=latin1 COMMENT='datatable demo table' AUTO_INCREMENT=1;
+INSERT INTO `design` (`id`, `era_no`, `tool_type`, `manufacturer_name`, `frequency`, `due_date`) VALUES
+(1, '501', 'Digital caliper','Trojan', '12 Months', '2023-07-02'),
+(2, '502', 'Digital Scale', 'Aeadam', '12 Months', '2023-07-03');
+
+CREATE TABLE engineering (
+    id int(11) NOT NULL AUTO_INCREMENT COMMENT 'Primary Key',
+    era_no varchar(100) NOT NULL COMMENT 'ERA No',
+    tool_type varchar(255) NOT NULL COMMENT 'Tool Type',
+    manufacturer_name varchar(255) NOT NULL COMMENT 'Manufacturer Name',
+    frequency varchar(255) NOT NULL COMMENT 'Frequency',
+    due_date date COMMENT 'Due Date',
+    PRIMARY KEY (id)
+  ) ENGINE=InnoDB DEFAULT CHARSET=latin1 COMMENT='datatable demo table' AUTO_INCREMENT=1;
+INSERT INTO `engineering` (`id`, `era_no`, `tool_type`, `manufacturer_name`, `frequency`, `due_date`) VALUES
+(1, '601', 'Digital caliper','Trojan', '12 Months', '2023-07-02'),
+(2, '602', 'Digital Scale', 'Aeadam', '12 Months', '2023-07-03'),
+(3, '603', 'Digital Vernier Caliper', 'Drape expert', '12 Months', '2023-06-03'),
+
+
+CREATE TABLE mpl (
+    id int(11) NOT NULL AUTO_INCREMENT COMMENT 'Primary Key',
+    era_no varchar(100) NOT NULL COMMENT 'ERA No',
+    tool_type varchar(255) NOT NULL COMMENT 'Tool Type',
+    manufacturer_name varchar(255) NOT NULL COMMENT 'Manufacturer Name',
+    frequency varchar(255) NOT NULL COMMENT 'Frequency',
+    due_date date COMMENT 'Due Date',
+    PRIMARY KEY (id)
+  ) ENGINE=InnoDB DEFAULT CHARSET=latin1 COMMENT='datatable demo table' AUTO_INCREMENT=1;
+INSERT INTO `mpl` (`id`, `era_no`, `tool_type`, `manufacturer_name`, `frequency`, `due_date`) VALUES
+(1, '701', 'Digital caliper','Trojan', '12 Months', '2023-07-02'),
+(2, '702', 'Digital Scale', 'Aeadam', '12 Months', '2023-07-03');
+
+CREATE TABLE warehouse (
+    id int(11) NOT NULL AUTO_INCREMENT COMMENT 'Primary Key',
+    era_no varchar(100) NOT NULL COMMENT 'ERA No',
+    tool_type varchar(255) NOT NULL COMMENT 'Tool Type',
+    manufacturer_name varchar(255) NOT NULL COMMENT 'Manufacturer Name',
+    frequency varchar(255) NOT NULL COMMENT 'Frequency',
+    due_date date COMMENT 'Due Date',
+    PRIMARY KEY (id)
+  ) ENGINE=InnoDB DEFAULT CHARSET=latin1 COMMENT='datatable demo table' AUTO_INCREMENT=1;
+INSERT INTO `warehouse` (`id`, `era_no`, `tool_type`, `manufacturer_name`, `frequency`, `due_date`) VALUES
+(1, '801', 'Digital caliper','Trojan', '12 Months', '2023-07-02'),
+(2, '802', 'Digital Scale', 'Aeadam', '12 Months', '2023-07-03');
+
+CREATE TABLE vs (
+    id int(11) NOT NULL AUTO_INCREMENT COMMENT 'Primary Key',
+    era_no varchar(100) NOT NULL COMMENT 'ERA No',
+    tool_type varchar(255) NOT NULL COMMENT 'Tool Type',
+    manufacturer_name varchar(255) NOT NULL COMMENT 'Manufacturer Name',
+    frequency varchar(255) NOT NULL COMMENT 'Frequency',
+    due_date date COMMENT 'Due Date',
+    PRIMARY KEY (id)
+  ) ENGINE=InnoDB DEFAULT CHARSET=latin1 COMMENT='datatable demo table' AUTO_INCREMENT=1;
+INSERT INTO `vs` (`id`, `era_no`, `tool_type`, `manufacturer_name`, `frequency`, `due_date`) VALUES
+(1, '901', 'Digital caliper','Trojan', '12 Months', '2023-07-02'),
+(2, '902', 'Digital Scale', 'Aeadam', '12 Months', '2023-07-03'),
+(3, '903', 'Digital Vernier Caliper', 'Drape expert', '12 Months', '2023-06-03'),
+(4, '904', 'Digital Vernier Caliper','Drape expert', '12 Months', '2023-06-02');
